@@ -9,12 +9,12 @@ st.title("Analisis Polusi Udara: Aotizhongxin & Changping")
 # Memuat dataset Aotizhongxin
 @st.cache_data
 def load_aotizhongxin():
-    return pd.read_csv('./Dashboard/Merged file.csv')
+    return pd.read_csv('./Dashboard/PRSA_Data_Aotizhongxin_20130301-20170228.csv')
 
 # Memuat dataset Changping
 @st.cache_data
 def load_changping():
-    return pd.read_csv('./Dashboard/Merged file.csv')
+    return pd.read_csv('./Dashboard/PRSA_Data_Changping_20130301-20170228.csv')
 # Load data
 data_aotizhongxin = load_aotizhongxin()
 data_changping = load_changping()
