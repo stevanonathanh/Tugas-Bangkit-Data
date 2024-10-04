@@ -16,17 +16,28 @@ def load_changping():
 # Judul aplikasi
 st.title("Analisis Polusi Udara: Aotizhongxin & Changping")
 
-# Memuat kedua dataset
+# Memuat dataset Aotizhongxin
+@st.cache_data
+def load_aotizhongxin():
+    url = "https://raw.githubusercontent.com/username/repo_name/main/path/to/PRSA_Data_Aotizhongxin_20130301-20170228.csv"
+    return pd.read_csv(url)
+
+# Memuat dataset Changping
+@st.cache_data
+def load_changping():
+    url = "https://raw.githubusercontent.com/username/repo_name/main/path/to/PRSA_Data_Changping_20130301-20170228.csv"
+    return pd.read_csv(url)
+
+# Load data
 data_aotizhongxin = load_aotizhongxin()
 data_changping = load_changping()
 
 # Menampilkan data mentah
-st.subheader("Data Mentah")
-if st.checkbox("Tampilkan data mentah Aotizhongxin"):
-    st.write(data_aotizhongxin)
+st.subheader("Data Aotizhongxin")
+st.write(data_aotizhongxin)
 
-if st.checkbox("Tampilkan data mentah Changping"):
-    st.write(data_changping)
+st.subheader("Data Changping")
+st.write(data_changping)
 
 # Bagian Analisis O3 untuk kedua kota
 st.subheader("Analisis O3")
