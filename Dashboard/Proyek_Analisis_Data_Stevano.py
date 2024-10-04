@@ -9,15 +9,12 @@ st.title("Analisis Polusi Udara: Aotizhongxin & Changping")
 # Memuat dataset Aotizhongxin
 @st.cache_data
 def load_aotizhongxin():
-    url = "https://raw.githubusercontent.com/username/repo_name/main/path/to/PRSA_Data_Aotizhongxin_20130301-20170228.csv"
-    return pd.read_csv(url)
+    return pd.read_csv('./Dashboard/Merged file.csv')
 
 # Memuat dataset Changping
 @st.cache_data
 def load_changping():
-    url = "https://raw.githubusercontent.com/username/repo_name/main/path/to/PRSA_Data_Changping_20130301-20170228.csv"
-    return pd.read_csv(url)
-
+    return pd.read_csv('./Dashboard/Merged file.csv')
 # Load data
 data_aotizhongxin = load_aotizhongxin()
 data_changping = load_changping()
