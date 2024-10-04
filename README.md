@@ -2,8 +2,8 @@
 
 ## Setup Environment
 ```bash
-git clone https://github.com/satria-d/Project-Analisis-Data.git
-cd Project-Analisis-Data
+git clone https://github.com/stevanonathanh/Tugas-Bangkit-Data
+cd Tugas-Bangkit-Data
 cd Dashboard
 ```
 ## Install Packages
