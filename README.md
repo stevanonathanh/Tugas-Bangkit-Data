@@ -2,7 +2,7 @@
 
 ## Setup Environment
 ```bash
-git clone https://github.com/stevanonathanh/Tugas-Bangkit-Data
+git clone [https://github.com/stevanonathanh/Tugas-Bangkit-Data](https://github.com/stevanonathanh/Tugas-Bangkit-Data.git)
 cd Tugas-Bangkit-Data
 cd Dashboard
 ```
