@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 # Memuat dataset Aotizhongxin
 @st.cache_data
 def load_aotizhongxin():
-    return pd.read_csv('./Dashboard/Aotizhongxin_cleaned.csv')
+    return pd.read_csv('./Dashboard/A.csv')
 
 # Memuat dataset Changping
 @st.cache_data
 def load_changping():
-    return pd.read_csv('./Dashboard/Changping_cleaned.csv')
+    return pd.read_csv('./Dashboard/C.csv')
 
 # Judul aplikasi
 st.title("Analisis Polusi Udara: Aotizhongxin & Changping")
